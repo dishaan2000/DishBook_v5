@@ -44,17 +44,14 @@ class User extends Authenticatable
         'password' => 'hashed',
     ];
 
-    /**
-     * Get the followers of the user.
-     */
+    // Get the followers of the user.
     public function followers()
     {
         return $this->belongsToMany(User::class, 'follows', 'following_id', 'follower_id');
     }
 
-    /**
-     * Get the users that the user is following.
-     */
+
+    // Get the users that the user is following.
     public function followings()
     {
         return $this->belongsToMany(User::class, 'follows', 'follower_id', 'following_id');
@@ -65,6 +62,8 @@ class User extends Authenticatable
         return $this->hasMany(Post::class);
     }
 
+
+    // mongoDB (sad face)
     // public function pageDurations()
     // {
     //     return $this->hasMany(PageDuration::class);
