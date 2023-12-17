@@ -8,11 +8,11 @@ use Session;
 use App\Models\User;
 use Hash;
 
+
+// inspiration fra https://www.itsolutionstuff.com/post/laravel-custom-login-and-registration-exampleexample.html
 class AuthController extends Controller
 {
     /**
-     * Write code on Method
-     *
      * @return response()
      */
     public function login()
@@ -20,8 +20,6 @@ class AuthController extends Controller
         return view('auth.login');
     }  
     /**
-     * Write code on Method
-     *
      * @return response()
      */
 
@@ -31,8 +29,6 @@ class AuthController extends Controller
     }
 
     /**
-     * Write code on Method
-     *
      * @return response()
      */
 
@@ -54,8 +50,6 @@ class AuthController extends Controller
       
 
     /**
-     * Write code on Method
-     *
      * @return response()
      */
 
@@ -75,13 +69,7 @@ class AuthController extends Controller
     
 
     /**
-
-     * Write code on Method
-
-     *
-
      * @return response()
-
      */
 
     public function index()
@@ -92,8 +80,6 @@ class AuthController extends Controller
         return redirect("login")->withSuccess('Opps! You do not have access');
     }
     /**
-     * Write code on Method
-     * 
      * @return response()
      */
 
@@ -107,8 +93,6 @@ class AuthController extends Controller
     }
 
     /**
-     * Write code on Method
-     *
      * @return response()
      */
 

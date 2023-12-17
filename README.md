@@ -15,6 +15,10 @@
 
 7. and then Run: php artisan migrate:refresh --seed
 
+8. After that you should be able to login on the page with the following: 
+email = test@example.com, test1@example.com, test2@example.com, test3@example.com, test4@example.com
+password = password
+
 
 ## About Laravel
 
